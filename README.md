@@ -20,7 +20,7 @@
 
 - OS: Ubuntu 20.04
 - GPU: NVIDIA-RTX-A5000 (VRAM 24GB)
-- CUDA: 12.1
+- CUDA: 12.4
 - Pytorch: 2.6.0 
 - Network: Download Hugging Face model/pipeline at the first time
 
@@ -42,7 +42,6 @@ conda activate kocca3d
 ```
 
 ```bash
-pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 # CUDA 12.4
 pip install torch==2.6.0 torchvision==0.21.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cu124
 ```
