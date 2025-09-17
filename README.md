@@ -10,9 +10,6 @@
 
 - 객체 생성 메인 스크립트: `run_batch_processing.py`  
 - 객체 평가 유틸(모듈화): `evaluate_clip_ds.py` (함수/클래스 import)
-- 씬 생성 메인 스크립트: `generate_scnene.py`
-- 랜덤 씬 생성 스크립트: `generate_random_scene.py`
-- 씬 평가 유틸: `scene_evalute_clip_ds.py`
 
 ---
 
@@ -118,36 +115,5 @@ xvfb-run --auto-servernum python run_batch_processing.py
 - meterial.mtl
 - metrerial_0.png
 
-<br>
-
-## 5-1) Generate Scene
-- one theme
-```bash
-python generate_scene.py --style art_deco
-python generate_scene.py --style steampunk
-```
-
-## 5-2) Generate Random Scene
-- one theme, same layout, but different object
-```bash
-python generate_random_scene.py --style art_deco
-python generate_random_scene.py --style steampunk
-```
-
-=> All results are saved in /scene_data/scene1
-
-
-<br>
-
-## 6) Evaluate Scene
-we have to finish all the steps above.
-
-```bash
-# exemple: art_deco vs steampunk 
-python compare_scene_styles.py --style1 art_deco --style2 steampunk
-
-# change directory
-python compare_scene_styles.py --style1 art_deco --style2 steampunk --scene_dir /source/sola/Kocca_3Dedit/scene_data/scene1
-```
 
 
